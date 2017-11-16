@@ -17,7 +17,7 @@ on flights.airport_id = airports.id
 2. Add aliases so that the resulting columns are called flight_number and airport_name
 
 ```
-select flights.number as flight_number, airports.name 
+select flights.number as flight_number, airports.name as airport_name
 from airports
 inner join flights
 on flights.airport_id = airports.id
@@ -26,7 +26,7 @@ on flights.airport_id = airports.id
 3. Using an inner join, select the flight number and airport name for all the flights that belong to Heathrow
 
 ```
-select flights.number as flight_number, airports.name 
+select flights.number as flight_number, airports.name as airport_name 
 from airports
 inner join flights
 on flights.airport_id = airports.id
